@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashNightRun 2.0 - La Carrera Nocturna Más Electrizante</title>
+    <meta name="description" content="Únete a FlashNightRun 2.0, la carrera nocturna más increíble. Corre bajo las luces, vive la experiencia. 5K, 10K y 21K disponibles.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="flash">FLASH</span><span class="night">NIGHT</span><span class="run">RUN</span>
+                <span class="version">2.0</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#evento">El Evento</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#inscripcion">Inscríbete</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="cta-button nav-cta" onclick="scrollToSection('inscripcion')">Inscribirse</button>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="event-badge">
+                <span>🏃‍♂️ Edición 2025</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">FLASH</span>
+                <span class="title-line accent">NIGHT</span>
+                <span class="title-line">RUN</span>
+                <span class="version-badge">2.0</span>
+            </h1>
+            <p class="hero-subtitle">La carrera nocturna que ilumina tu camino</p>
+            <div class="hero-info">
+                <div class="info-card">
+                    <span class="icon">📅</span>
+                    <div>
+                        <strong>15 de Noviembre 2025</strong>
+                        <small>Sábado</small>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="icon">⏰</span>
+                    <div>
+                        <strong>20:00 hrs</strong>
+                        <small>Puntual</small>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="icon">📍</span>
+                    <div>
+                        <strong>Parque Central</strong>
+                        <small>Ciudad</small>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="cta-button primary pulse" onclick="scrollToSection('inscripcion')">
+                    <span>¡Reserva tu Plaza!</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <button class="cta-button secondary" onclick="scrollToSection('evento')">
+                    Conocer Más
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="2000">0</span>+
+                    <span class="stat-label">Participantes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Distancias</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>+
+                    <span class="stat-label">Premios</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <!-- Sección: El Evento -->
+    <section class="evento" id="evento">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre el Evento</span>
+                <h2>¿Qué es <span class="accent">FlashNightRun</span>?</h2>
+                <p>Una experiencia única donde la noche se convierte en tu pista de carrera</p>
+            </div>
+            <div class="evento-grid">
+                <div class="evento-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <h3>Luz y Energía</h3>
+                    <p>Corre bajo un espectáculo de luces LED y efectos visuales que transforman la noche en un escenario futurista.</p>
+                </div>
+                <div class="evento-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Velocidad y Emoción</h3>
+                    <p>Tres distancias para todos los niveles. Desde principiantes hasta corredores experimentados.</p>
+                </div>
+                <div class="evento-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Comunidad</h3>
+                    <p>Únete a miles de corredores en una celebración del deporte, la salud y la superación personal.</p>
+                </div>
+                <div class="evento-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                    <p>Kit de corredor de alta calidad, medalla de finisher, zona de recuperación y festival after-run.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Categorías -->
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Elige tu Desafío</span>
+                <h2>Distancias y <span class="accent">Categorías</span></h2>
+                <p>Encuentra la distancia perfecta para ti</p>
+            </div>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <div class="categoria-icon">⚡</div>
+                    <div class="categoria-badge">Recomendado</div>
+                    <h3>5K Flash</h3>
+                    <p class="categoria-desc">Ideal para principiantes y quienes buscan una primera experiencia</p>
+                    <ul class="categoria-features">
+                        <li>✓ Kit básico incluido</li>
+                        <li>✓ Medalla de finisher</li>
+                        <li>✓ Zona de hidratación cada 2km</li>
+                        <li>✓ Música y animación</li>
+                    </ul>
+                    <div class="categoria-precio">
+                        <span class="precio">$25</span>
+                        <small>USD</small>
+                    </div>
+                    <button class="btn-categoria" onclick="selectDistance('5k')">Seleccionar</button>
+                </div>
+
+                <div class="categoria-card featured">
+                    <div class="categoria-icon">🌟</div>
+                    <div class="categoria-badge popular">Más Popular</div>
+                    <h3>10K Night</h3>
+                    <p class="categoria-desc">El equilibrio perfecto entre desafío y disfrute</p>
+                    <ul class="categoria-features">
+                        <li>✓ Kit premium incluido</li>
+                        <li>✓ Medalla de finisher premium</li>
+                        <li>✓ Zona de hidratación cada 2.5km</li>
+                        <li>✓ Música y DJ en ruta</li>
+                        <li>✓ Foto profesional finish</li>
+                    </ul>
+                    <div class="categoria-precio">
+                        <span class="precio">$35</span>
+                        <small>USD</small>
+                    </div>
+                    <button class="btn-categoria" onclick="selectDistance('10k')">Seleccionar</button>
+                </div>
+
+                <div class="categoria-card">
+                    <div class="categoria-icon">🔥</div>
+                    <div class="categoria-badge extreme">Élite</div>
+                    <h3>21K Half Moon</h3>
+                    <p class="categoria-desc">Para corredores experimentados que buscan el máximo reto</p>
+                    <ul class="categoria-features">
+                        <li>✓ Kit elite incluido</li>
+                        <li>✓ Medalla premium限量</li>
+                        <li>✓ Zona de hidratación cada 2km</li>
+                        <li>✓ Soporte médico completo</li>
+                        <li>✓ Ranking clasificatorio</li>
+                    </ul>
+                    <div class="categoria-precio">
+                        <span class="precio">$45</span>
+                        <small>USD</small>
+                    </div>
+                    <button class="btn-categoria" onclick="selectDistance('21k')">Seleccionar</button>
+                </div>
+            </div>
+
+            <div class="cat-info">
+                <div class="info-block">
+                    <h4>🏆 Categorías por Edad</h4>
+                    <p>Todas las distancias incluyen categorías: Junior (18-29), Sénior (30-39), Máster (40-49), Veterano (50-59), Super Veterano (60+)</p>
+                </div>
+                <div class="info-block">
+                    <h4>✨ Kit del Corredor</h4>
+                    <p>Camiseta técnica, número de carrera, chip dorsal, medalla de finisher, kit de hidratación y descuentos en patrocinadores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Inscripción -->
+    <section class="inscripcion" id="inscripcion">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Únete a la Noche</span>
+                <h2>Inscripción <span class="accent">FlashNightRun 2.0</span></h2>
+                <p>Completa el formulario y asegura tu lugar en la carrera</p>
+            </div>
+            <div class="form-container">
+                <form id="registration-form" class="registration-form">
+                    <div class="form-step active" id="step-1">
+                        <h3>Paso 1: Información Personal</h3>
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="juan@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="+1 234 567 8900">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha-nac">Fecha de Nacimiento *</label>
+                                <input type="date" id="fecha-nac" name="fecha_nac" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="genero">Género *</label>
+                                <select id="genero" name="genero" required>
+                                    <option value="">Selecciona...</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-next" onclick="nextStep(2)">Continuar →</button>
+                    </div>
+
+                    <div class="form-step" id="step-2">
+                        <h3>Paso 2: Selección de Carrera</h3>
+                        <div class="form-group">
+                            <label>¿Qué distancia quieres correr? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="distancia" value="5k" required>
+                                    <div class="radio-content">
+                                        <span class="radio-title">5K Flash</span>
+                                        <span class="radio-price">$25 USD</span>
+                                    </div>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="distancia" value="10k" required>
+                                    <div class="radio-content">
+                                        <span class="radio-title">10K Night</span>
+                                        <span class="radio-price">$35 USD</span>
+                                    </div>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="distancia" value="21k" required>
+                                    <div class="radio-content">
+                                        <span class="radio-title">21K Half Moon</span>
+                                        <span class="radio-price">$45 USD</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="talla">Talla de Camiseta *</label>
+                            <select id="talla" name="talla" required>
+                                <option value="">Selecciona...</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-corredor">Tipo de Corredor</label>
+                            <select id="tipo-corredor" name="tipo_corredor">
+                                <option value="recreativo">Recreativo</option>
+                                <option value="competitivo">Competitivo</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-prev" onclick="nextStep(1)">← Atrás</button>
+                            <button type="button" class="btn-next" onclick="nextStep(3)">Continuar →</button>
+                        </div>
+                    </div>
+
+                    <div class="form-step" id="step-3">
+                        <h3>Paso 3: Datos Médicos y Emergencia</h3>
+                        <div class="form-group">
+                            <label for="condiciones-medicas">¿Tienes alguna condición médica relevante? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="condiciones_medicas" value="no" required>
+                                    <span>No</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="condiciones_medicas" value="si" required>
+                                    <span>Sí (especifica abajo)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group" id="condiciones-desc" style="display: none;">
+                            <label for="condiciones-detalle">Especifica tu condición:</label>
+                            <textarea id="condiciones-detalle" name="condiciones_detalle" rows="3" placeholder="Ej: asma, alergias, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="emergencia-nombre">Contacto de Emergencia *</label>
+                            <input type="text" id="emergencia-nombre" name="emergencia_nombre" required placeholder="Nombre del contacto">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emergencia-telefono">Teléfono de Emergencia *</label>
+                                <input type="tel" id="emergencia-telefono" name="emergencia_telefono" required placeholder="+1 234 567 8900">
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencia-parentesco">Parentesco *</label>
+                                <input type="text" id="emergencia-parentesco" name="emergencia_parentesco" required placeholder="Ej: padre, madre, hermano">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="terminos">
+                                <input type="checkbox" id="terminos" name="terminos" required>
+                                Acepto los <a href="#" onclick="alert('Se abrirían los términos y condiciones')">términos y condiciones</a> * y certifico que estoy en condiciones físicas adecuadas para participar en esta carrera. *
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-prev" onclick="nextStep(2)">← Atrás</button>
+                            <button type="submit" class="btn-submit">Completar Inscripción ✓</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="form-summary" id="form-summary" style="display: none;">
+                    <h3>Resumen de Inscripción</h3>
+                    <div class="summary-content"></div>
+                    <button type="button" class="btn-edit" onclick="resetForm()">Editar Inscripción</button>
+                </div>
+
+                <div class="form-success" id="form-success" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>¡Inscripción Exitosa!</h3>
+                    <p>Tu lugar en FlashNightRun 2.0 está confirmado.</p>
+                    <p>Te hemos enviado un correo de confirmación con todos los detalles.</p>
+                    <div class="confirmation-code">
+                        <strong>Código de Confirmación:</strong>
+                        <span id="confirmation-code"></span>
+                    </div>
+                    <button onclick="resetForm()" class="btn-primary">Inscribir Otro Participante</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Cronograma -->
+    <section class="cronograma" id="cronograma">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Planifica</span>
+                <h2>Cronograma del <span class="accent">Evento</span></h2>
+                <p>Todo lo que sucederá la noche del gran día</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">18:00</div>
+                    <div class="timeline-content">
+                        <h4>Apertura del Evento</h4>
+                        <p>Entrega de kits, zona de calentamiento y bienvenida</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">19:00</div>
+                    <div class="timeline-content">
+                        <h4>Actividades Pre-carrera</h4>
+                        <p>Zumba, estiramientos y presentación de sponsors</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">19:30</div>
+                    <div class="timeline-content">
+                        <h4>Reunión de Corredores</h4>
+                        <p>Briefing, seguridad y calentamiento grupal</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-time">20:00</div>
+                    <div class="timeline-content">
+                        <h4>🚀 INICIO DE LA CARRERA</h4>
+                        <p>Salida 21K → 20:00<br>Salida 10K → 20:15<br>Salida 5K → 20:30</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">21:30</div>
+                    <div class="timeline-content">
+                        <h4>Entrega de Premios</h4>
+                        <p>Reconocimiento a ganadores de cada categoría</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">22:00</div>
+                    <div class="timeline-content">
+                        <h4>After-Run Party</h4>
+                        <p>Música en vivo, comida, zona de recuperación y sorteo de premios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Preguntas Frecuentes -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dudas</span>
+                <h2>Preguntas <span class="accent">Frecuentes</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Puedo correr con cochesito de bebé o mascota?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, en la distancia 5K está permitido el uso de cochesitos de bebé y mascotas (con correa). Por favor, sal desde la última fila para seguridad de todos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Hay guardería durante el evento?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con servicio de guardería gratuito para niños de 3 a 12 años. Debes solicitarlo durante la inscripción.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué pasa si llueve?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El evento se realiza llueva o truene (excepto condiciones extremas). Te recomendamos llevar chubasquero ligero. La lluvia nocturna le da un mágico toque a la carrera.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Puedo transferir mi inscripción a otra persona?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, hasta 7 días antes del evento. Contacta a organización@flashnightrun.com indicando tus datos y los del nuevo participante. Coste de transferencia: $10 USD.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Hay entrenamientos grupales previos?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Sí! Organizamos entrenamientos los sábados a las 7:00 am en el Parque Central. También tenemos contenido exclusivo en nuestra app para prepararte.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuándo y dónde recojo mi kit?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El kit se recoge el mismo día del evento a partir de las 18:00 en la zona de registro del Parque Central. Debes presentar tu confirmación y documento de identidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contact-info">
+                    <h2>¿Tienes <span class="accent">Preguntas</span>?</h2>
+                    <p>Nuestro equipo está listo para ayudarte con cualquier duda sobre FlashNightRun 2.0</p>
+                    <div class="contact-methods">
+                        <a href="mailto:info@flashnightrun.com" class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@flashnightrun.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <span>+1 (234) 567-8900</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <span>Parque Central, Ciudad</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <strong>Horario de Atención</strong>
+                                <span>Lun-Vie 9:00-18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-nombre">Nombre</label>
+                            <input type="text" id="contact-nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-asunto">Asunto</label>
+                            <select id="contact-asunto" name="asunto" required>
+                                <option value="">Selecciona...</option>
+                                <option value="inscripcion">Problema con inscripción</option>
+                                <option value="kit">Kit del corredor</option>
+                                <option value="empresas">Empresas / Patrocinio</option>
+                                <option value="otro">Otra consulta</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-mensaje">Mensaje</label>
+                            <textarea id="contact-mensaje" name="mensaje" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="flash">FLASH</span><span class="night">NIGHT</span><span class="run">RUN</span>
+                        <span class="version">2.0</span>
+                    </div>
+                    <p>La carrera nocturna que ilumina tu camino. Únete a la experiencia más electrizante del año.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#evento">El Evento</a></li>
+                        <li><a href="#categorias">Categorías</a></li>
+                        <li><a href="#inscripcion">Inscripción</a></li>
+                        <li><a href="#cronograma">Cronograma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Reembolso</a></li>
+                        <li><a href="#">Protocolo de Seguridad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>No te pierdas nada</h4>
+                    <p>Suscríbete para recibir actualizaciones y noticias exclusivas</p>
+                    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlashNightRun 2.0. Todos los derechos reservados.</p>
+                <p><small>Organizado por <a href="#">Sports Events Co.</a></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal" id="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
